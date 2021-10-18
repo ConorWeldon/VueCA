@@ -1,7 +1,48 @@
+@import url('http://fonts.cdnfonts.com/css/azedo');
+@import url(//db.onlinewebfonts.com/c/0980a3282d814d6401d07131fcf53789?family=Azedo);
+
+* {
+    overflow-x: hidden;
+}
+
 body {
     width: 100vw;
     height: 100vw;
     margin: 0;
-    background: radial-gradient(#292929, #000000);
-    overflow: hidden;
+    /* background: radial-gradient(#292929, #000000); */
+    /* overflow: hidden; */
+    color: #ffffff;
+}
+
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+}
+
+.earth {
+    position: absolute;
+    left: 30.295%;    /* 576.5px Even each side */
+    top: 13.875%;       /* 130px */
+    z-index: -1;
+    max-width: 100%;
+    width: 39.412%;     /* 750px */
+    height: auto;
+}
+
+.title-img {
+    margin: 25.521% 0px 0px 0px;        /* 490px top */
+    max-width: 100%;
+    width: 34.532%;     /* 663px */
+    height: auto;
+}
+
+.subTitle {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 700;
+    font-size:  2.1875vw;        /* 42px */
+    color: #ffffff;
+    max-width: 100%;
+    height: auto;
 }
