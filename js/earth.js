@@ -93,11 +93,23 @@ import * as THREE from '/node_modules/three/src/Three.js';
         animate(); //Rendering my loop
     }
 
-    function onMouseMove( event ) {
+    // function onMouseMove( event ) {
+    //     // calculate mouse position in normalized device coordinates
+    //     // (-1 to +1) for both components
+    //     mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    //     mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+    
+    // }
+
+    function onMouseDown( event ) {
         // calculate mouse position in normalized device coordinates
         // (-1 to +1) for both components
         mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
         mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+        if (mouse.x >= 0 && mouse.y >= 0) {
+            console.log("hi");
+        }
     
     }
 
@@ -121,7 +133,8 @@ import * as THREE from '/node_modules/three/src/Three.js';
         controls.update();
         renderer.render(scene, camera);
         requestAnimationFrame(animate);
-        addEventListener( 'mousemove', onMouseMove, false );
+        // addEventListener( 'mousemove', onMouseMove, false );
+        addEventListener( 'mousedown', onMouseDown );
         requestAnimationFrame(render);
     }
 

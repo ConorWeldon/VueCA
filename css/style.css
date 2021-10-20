@@ -18,7 +18,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -2;
+    z-index: -3;
 }
 
 .earth {
@@ -29,6 +29,27 @@ body {
     max-width: 100%;
     width: 39.412%;     /* 750px */
     height: auto;
+}
+
+.moon {
+    position: absolute;
+    left: 80.4%;    /* 1530px */
+    top: 20.278%;       /* 190px */
+    z-index: -1;
+}
+
+.mars {
+    position: absolute;
+    left: 8.1452%;      /* 155px */
+    top: 35.22%;        /* 330px */
+    z-index: -1;
+}
+
+.lines {
+    position: absolute;
+    left: 0px;    /* 576.5px Even each side */
+    top: 0px;       /* 130px */
+    z-index: -2;
 }
 
 .title-img {
@@ -45,4 +66,28 @@ body {
     color: #ffffff;
     max-width: 100%;
     height: auto;
+}
+
+.explore-box {
+    width: 400px;
+    height: 75px;
+    background-color: #ffffff;
+    margin: 50px 0px 15px 0px;
+}
+
+.explore-text {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 700;
+    font-size:  1.875vw;        /* 36px */
+    color: #000000;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.explore-subText {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 300;
+    font-size:   0.9375vw;        /* 18px */
+    color: #ffffff;
+    text-align: center;
 }
